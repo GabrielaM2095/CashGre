@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/values/styles.xml -->
+<resources>
+
+    <!-- Define your custom EditText style -->
+    <style name="MyEditTextStyle" parent="Widget.AppCompat.EditText">
+        <item name="android:background">@drawable/edit_text_background</item>
+        <!-- Add more style attributes as needed -->
+    </style>
+
+
+    <!-- Define your custom button style -->
+    <style name="GreenButtonStyle" parent="Widget.AppCompat.Button">
+        <item name="android:background">@drawable/green_button_background</item>
+        <item name="android:textColor">@color/white</item> <!-- Set text color to black -->
+        <!-- Add more style attributes as needed -->
+    </style>
+
+
+
+
+</resources>
+

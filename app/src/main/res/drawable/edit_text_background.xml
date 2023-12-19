@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/drawable/edit_text_background.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <solid android:color="#DCEDC8" /> <!-- Set the background color as needed -->
+    <corners android:radius="8dp" /> <!-- Set the corner radius as needed -->
+    <stroke
+        android:width="2dp"
+        android:color="#020000" /> <!-- Set the stroke color and width as needed -->
+</shape>
