@@ -21,6 +21,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".RegistroMaterialesActivity"/>
+        <activity android:name=".InstruccionesActivity"/>
+        <activity android:name=".RegistroUsuarioActivity"/>
+        <activity android:name=".RecuperarContrasenaActivity"/>
+        <activity android:name=".GestionOrdenesActivity"/>
     </application>
 
 </manifest>

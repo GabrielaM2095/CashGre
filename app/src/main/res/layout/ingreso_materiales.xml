@@ -31,11 +31,36 @@
 
     <TableLayout
         android:id="@+id/table"
-        android:layout_width="fill_parent"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toTopOf="@+id/buttonVender"
         app:layout_constraintTop_toBottomOf="@+id/textView5">
 
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp">
+
+            <TextView
+                android:text="Elementos"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_weight="10"/>
+
+            <TextView
+                android:gravity="center"
+                android:text="Kg"
+                android:textStyle="bold"
+                android:layout_weight="1" />
+
+            <TextView
+                android:text="Precio por Kg"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_weight="11"/>
+        </TableRow>
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -49,14 +74,15 @@
                 android:layout_weight="10"/>
 
             <EditText
-                android:id="@+id/pesoPapel"
+                android:id="@+id/editText1"
                 android:gravity="center"
                 android:text=""
                 android:layout_weight="1"
+                android:inputType="numberDecimal"
                 style="@style/MyEditTextStyle"/>
 
             <TextView
-                android:text="$ valor de venta"
+                android:text="$10 valor de venta"
                 android:gravity="center"
                 android:layout_weight="11"/>
         </TableRow>
@@ -73,14 +99,15 @@
                 android:layout_weight="10"/>
 
             <EditText
-                android:id="@+id/pesoPlastico"
+                android:id="@+id/editText2"
                 android:gravity="center"
                 android:text=""
                 android:layout_weight="1"
+                android:inputType="numberDecimal"
                 style="@style/MyEditTextStyle"/>
 
             <TextView
-                android:text="$ valor de venta"
+                android:text="$15 valor de venta"
                 android:gravity="center"
                 android:layout_weight="11"/>
         </TableRow>
@@ -97,14 +124,15 @@
                 android:layout_weight="10"/>
 
             <EditText
-                android:id="@+id/pesoCarton"
+                android:id="@+id/editText3"
                 android:gravity="center"
                 android:text=""
                 android:layout_weight="1"
+                android:inputType="numberDecimal"
                 style="@style/MyEditTextStyle"/>
 
             <TextView
-                android:text="$ valor de venta"
+                android:text="$20 valor de venta"
                 android:gravity="center"
                 android:layout_weight="11"/>
         </TableRow>
@@ -121,14 +149,15 @@
                 android:layout_weight="10"/>
 
             <EditText
-                android:id="@+id/pesoMadera"
+                android:id="@+id/editText4"
                 android:gravity="center"
                 android:text=""
                 android:layout_weight="1"
+                android:inputType="numberDecimal"
                 style="@style/MyEditTextStyle"/>
 
             <TextView
-                android:text="$ valor de venta"
+                android:text="$25 valor de venta"
                 android:gravity="center"
                 android:layout_weight="11"/>
         </TableRow>
@@ -145,14 +174,15 @@
                 android:layout_weight="10"/>
 
             <EditText
-                android:id="@+id/pesoHierro"
+                android:id="@+id/editText5"
                 android:gravity="center"
                 android:text=""
                 android:layout_weight="1"
+                android:inputType="numberDecimal"
                 style="@style/MyEditTextStyle"/>
 
             <TextView
-                android:text="$ valor de venta"
+                android:text="$30 valor de venta"
                 android:gravity="center"
                 android:layout_weight="11"/>
         </TableRow>
@@ -169,14 +199,15 @@
                 android:layout_weight="10"/>
 
             <EditText
-                android:id="@+id/pesoAluminio"
+                android:id="@+id/editText6"
                 android:gravity="center"
                 android:text=""
                 android:layout_weight="1"
+                android:inputType="numberDecimal"
                 style="@style/MyEditTextStyle"/>
 
             <TextView
-                android:text="$ valor de venta"
+                android:text="$35 valor de venta"
                 android:gravity="center"
                 android:layout_weight="11"/>
         </TableRow>
@@ -193,14 +224,15 @@
                 android:layout_weight="10"/>
 
             <EditText
-                android:id="@+id/pesoPilas"
+                android:id="@+id/editText7"
                 android:gravity="center"
                 android:text=""
                 android:layout_weight="1"
+                android:inputType="numberDecimal"
                 style="@style/MyEditTextStyle"/>
 
             <TextView
-                android:text="$ valor de venta"
+                android:text="$40 valor de venta"
                 android:gravity="center"
                 android:layout_weight="11"/>
         </TableRow>
@@ -212,14 +244,38 @@
             android:paddingBottom="8dp">
 
             <TextView
-                android:text="TOTAL Kg:"
+                android:text="TOTAL (Kg):"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:layout_weight="10"/>
+
+            <EditText
+                android:id="@+id/totalEditText"
+                android:gravity="center"
+                android:layout_weight="12"
+                android:inputType="numberDecimal"
+                />
+
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp">
+
+            <TextView
+                android:text="Costo Total ($)"
+                android:textStyle="bold"
                 android:gravity="center"
                 android:layout_weight="10"/>
 
             <EditText
-                android:id="@+id/pesoTotalCalculo"
+                android:id="@+id/totalCostEditText"
                 android:gravity="center"
-                android:layout_weight="12" />
+                android:layout_weight="12"
+                android:inputType="numberDecimal"
+                />
 
         </TableRow>
     </TableLayout>
@@ -233,7 +289,8 @@
         app:layout_constraintBottom_toTopOf="@+id/textView11"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/table" />
+        app:layout_constraintTop_toBottomOf="@+id/table"
+        android:onClick="calculateTotal" />
 
     <TextView
         android:id="@+id/textView11"

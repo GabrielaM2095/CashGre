@@ -57,7 +57,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginTop="24dp"
+            android:layout_marginTop="16dp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textSize="24sp"
             android:text="Login"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -68,6 +71,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="24dp"
+            android:textStyle="bold"
             android:text="Correo"
             app:layout_constraintTop_toBottomOf="@+id/textView6"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -89,6 +93,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Contraseña"
+            android:textStyle="bold"
             android:padding="24dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -104,34 +109,38 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"/>
 
-        <TextView
-            android:id="@+id/textView8"
+        <Button
+            android:id="@+id/btnPassword"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="¿Olvide mi contraseña?"
-            android:layout_marginTop="24dp"
-            android:layout_gravity="center"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"/>
-
-        <TextView
-            android:id="@+id/textView9"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="24dp"
-            android:text="Registrarme"
+            android:padding="16dp"
             android:layout_gravity="center"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView8" />
+            android:textColor="@android:color/black"
+            android:background="@android:color/transparent"/>
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/btnRegistro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Registrarme"
+            android:layout_gravity="center"
+            android:padding="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView8"
+            android:textColor="@android:color/black"
+            android:background="@android:color/transparent"/>
+
+        <Button
+            android:id="@+id/buttonIngresar"
             style="@style/GreenButtonStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="24dp"
             android:layout_gravity="center"
+            android:padding="12sp"
             android:text="Ingresar"
             app:layout_constraintBottom_toBottomOf="@+id/linearLayout" />
     </LinearLayout>
